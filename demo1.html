@@ -5,79 +5,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <time datetime=""></time>
-    <title>Positioning</title>
+    <title> css grid layout</title>
     <style>
+
         body {
-            font-family: sans-serif;
-            margin: 0;
-        }
-
-        header {
-            background: purple;
-            height: 100px;
+            font-family:sans-serif ;
 
         }
 
-        h1 {
-            text-align: center;
-            color: white;
-            line-height: 100px;
-            margin: 0;
+        .container > div {
 
-
-        }
-
-        section {
-            display: flex;
-
-
-        }
-
-        article {
-
+            border-radius: 5px;
             padding: 10px;
-            margin: 10px;
-            background: aqua;
+            background-color:rgb(207 232 220 );
+            border: 2px solid rgb(79 185 227 );
         }
+
+.container{
+    display: grid;
+    grid-template-columns:200px 200px 200px ;
+
+    
+
+
+}
+
     </style>
 
 
 </head>
 
 <body>
-    <!-- Flex Box: Es una tecnica de diseño uni dimensional, para agrupar los elementos HTML en filas y columnas. Los elementos flexibles (flex items) expanden para rellenar el espacio adicional o se contraen para encajar en espacios mas pequeños -->
-
-    <!-- ¿Por que flexbox? El layout css flexbox nos permite lo siguiente:
-
-1- Verticalmente centrar un bloque de contenido dentro de su padre (elemento que contiene otros div o otros body.. se llama etiqueta simantica tambien...)
-2- Hace que todos los hijos de un elemento contenedor tomen una cantidad de espacio igual del espacio disponible en ancho y altura, independientemente de cuanto ancho y altura quede
-3- Hace que todas las columnas de un diseño de multiples columnas adopte la misma altura aunque cada tengan contenidos diferentes -->
-
-    <header>
-        <h1>flexbox ejemplo</h1>
-
-    </header>
-    <section>
-        <article>
-            <h2>Primer Articulo</h2>
-            p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quam deleniti, fugiat eos, fuga pariatur nemo a nihil veritatis laborum itaque repudiandae animi nobis molestias velit architecto eius consequuntur, ut eum!
-        
-            
-
-        </article>
-        <article>
-            <h2>Segundo Articulo</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, itaque. Impedit cupiditate sapiente eius deserunt vel, officiis voluptatum libero provident laudantium cum saepe, non ipsum dolore. Rerum facilis minus at!</p>
-        
-    
-
-        </article>
-        <article>
-
-            <h2>Tercer Articulo</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium tempora aliquid corrupti ipsa fugiat, perspiciatis, nulla repellat reprehenderit, adipisci maiores at? Eaque dolore sequi animi. Veritatis dolorem repudiandae perferendis laboriosam!</p>
-        </article>
-    </section>
+    <div class="container">
+        <div>one</div>
+        <div>Tow</div>
+        <div>Three</div>
+        <div>four</div>
+        <div>Five</div>
+        <div>Six</div>
+        <div>Seven</div>
+    </div>
+</body>
 </body>
 
 </html>
