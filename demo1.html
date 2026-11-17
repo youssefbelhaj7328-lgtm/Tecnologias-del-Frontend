@@ -8,54 +8,38 @@
     <title> css grid layout</title>
     <style>
         
-
-        .container{
-
-            font-family: sans-serif;
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            gap: 20px;
-        }
-        header, footer {
-            border: radius 5px; 
-            padding: 10px;
-            background-color: rebeccapurple;
-            color: whitesmoke;
-            text-align: center;
-
-        }
-
-        aside {
-            border-right: ipx solid rebeccapurple;
-        }
-
-        header {
-grid-column: 1 / 3;
-grid-row: 1;
+.container {
+    display: grid;
+    font-family: ;
+    grid-template-areas: 
+    "header header"
+    "sidebar content"
+    "footer footer"
+    ;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+    
+    
+}
+        
+header {
+    grid-area: header;
 
 
-        }
+}
+main {
+    grid-area: content;
 
-        main {
+}
+aside {
 
-          grid-column: 2;  
-          grid-row: 2;
+    grid-area: sidebar;
 
+}
+footer {
+    grid-area: footer;
 
-        }
-        aside {
-
-            grid-column: 1;
-            grid-row: 2;
-
-        }
-        footer {
-
-            grid-column: 1 / 3;
-            grid-row: 3;
-
-
-        }
+}
     </style>
 
 
