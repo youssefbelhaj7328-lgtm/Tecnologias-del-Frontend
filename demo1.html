@@ -7,55 +7,87 @@
     <time datetime=""></time>
     <title> css grid layout</title>
     <style>
+        
 
-        body {
-            font-family:sans-serif ;
+        .container{
 
+            font-family: sans-serif;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
         }
-
-        .container > div {
-
-            border-radius: 5px;
+        header, footer {
+            border: radius 5px; 
             padding: 10px;
-            background-color:rgb(207 232 220 );
-            border: 2px solid rgb(79 185 227 );
+            background-color: rebeccapurple;
+            color: whitesmoke;
+            text-align: center;
+
         }
-        /*creando grid flexible utlilizando  unidades fr, es decir indicando cuantas  fracciones 
-        del esoacio disponible se requiere para cada colomna . porejemplo:
-         acontinuacion queremos que cada columna tome una fraccion del espacio disponible */
 
-         /*Agregar al contenodor tantas colunabnas como sea posible*/
+        aside {
+            border-right: ipx solid rebeccapurple;
+        }
 
-.container {
-     display: grid;
-    grid-template-columns:repeat(auto-fit, minmax(230px,1fr));
-    grid-auto-rows: minmax(50px,auto);
-    gap: 20px;
-    
+        header {
+grid-column: 1 / 3;
+grid-row: 1;
 
 
+        }
 
-}
+        main {
 
+          grid-column: 2;  
+          grid-row: 2;
+
+
+        }
+        aside {
+
+            grid-column: 1;
+            grid-row: 2;
+
+        }
+        footer {
+
+            grid-column: 1 / 3;
+            grid-row: 3;
+
+
+        }
     </style>
 
 
 </head>
-
 <body>
-    <div class="container">
-        <
-        <div>one <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem tempore dolorem quibusdam nam explicabo adipisci dolore reprehenderit omnis exercitationem nesciunt tenetur, et eum modi maxime. Suscipit, eveniet? Adipisci, error.</p></div>
-        <div>Tow</div>
-        <div>Three</div>
-        <div><p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis nostrum maxime ratione sed! Cumque est dolorem deleniti inventore? Labore quia odit dolore amet, totam tempora illum excepturi quo cumque pariatur!
-        </p>four</div>
-        <div>Five</div>
-        <div>Six</div>
-        <div>Seven</div>
+    
+</body>
+
+<div class="container">
+<head>header</head>
+<main>
+
+    <h1>Main</h1>
+    <p>Main content</p>
+</main>
+
+<aside>
+
+    <h2>Aside</h2>
+    <p>Rrelated content</p>
+</aside>
+<footer>footer</footer>
+
+
+
+
+
+    
+
+
     </div>
 </body>
-</body>
+
 
 </html>
