@@ -24,11 +24,13 @@
         del esoacio disponible se requiere para cada colomna . porejemplo:
          acontinuacion queremos que cada columna tome una fraccion del espacio disponible */
 
-         /* Que la primera columna ocupe 2 fracciones del espacio disponible */
+         /* dar tamaño a las filas para que no sean implicito, de 100px
+         en este caso*/
 
 .container {
      display: grid;
-    grid-template-columns:2fr 1fr 1fr;
+    grid-template-columns:repeat(3,1fr);
+    grid-auto-rows: minmax(100px,auto);
     gap: 20px;
     
 
@@ -43,7 +45,8 @@
 
 <body>
     <div class="container">
-        <div>one</div>
+        <
+        <div>one <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quidem tempore dolorem quibusdam nam explicabo adipisci dolore reprehenderit omnis exercitationem nesciunt tenetur, et eum modi maxime. Suscipit, eveniet? Adipisci, error.</p></div>
         <div>Tow</div>
         <div>Three</div>
         <div>four</div>
