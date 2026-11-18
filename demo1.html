@@ -4,74 +4,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <time datetime=""></time>
-    <title> css grid layout</title>
+    <title>Line-based placement</title>
     <style>
-        
-.container {
-    display: grid;
-    font-family: ;
-    grid-template-areas: 
-    "header header"
-    "sidebar content"
-    "footer footer"
-    ;
-    grid-template-columns: 1fr 3fr;
-    gap: 20px;
-    
-    
-}
-        
-header {
-    grid-area: header;
+        .container {
+            font-family: sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer"
 
+            ;
+            grid-template-columns: 1fr 3fr;
+            gap: 20px;
+        }
 
-}
-main {
-    grid-area: content;
+        header,
+        footer {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: rebeccapurple;
+            color: whitesmoke;
+            text-align: center;
+        }
 
-}
-aside {
+        aside {
+            border-right: 1px solid rebeccapurple;
+        }
 
-    grid-area: sidebar;
+        header {
+            grid-area: header;
+        }
 
-}
-footer {
-    grid-area: footer;
+        main {
+            grid-area: content;
+        }
 
-}
+        aside {
+            grid-area: sidebar;
+        }
+
+        footer {
+            grid-area: footer;
+        }
     </style>
-
-
 </head>
+
 <body>
-    
-</body>
-
-<div class="container">
-<head>header</head>
-<main>
-
-    <h1>Main</h1>
-    <p>Main content</p>
-</main>
-
-<aside>
-
-    <h2>Aside</h2>
-    <p>Rrelated content</p>
-</aside>
-<footer>footer</footer>
-
-
-
-
-
-    
-
-
+    <div class="container">
+        <header>Header</header>
+        <main>
+            <h1>Main</h1>
+            <p>Main content</p>
+        </main>
+        <aside>
+            <h2>Aside</h2>
+            <p>Related content</p>
+        </aside>
+        <footer>footer</footer>
     </div>
 </body>
-
 
 </html>
