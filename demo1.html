@@ -38,15 +38,25 @@ grid-row: 1;
 
         main {
 
-          grid-column: 2;  
-          grid-row: 2;
+        grid-area: content;
+          display: grid;
+          grid-template-rows: 4fr 3fr 3fr;
+          gap: inherit;
 
 
         }
+        article {
+padding: 10px;
+border: 2px solid rebeccapurple;
+border-radius: 5px;
+
+
+        }
+
         aside {
 
-            grid-column: 1;
-            grid-row: 2;
+            grid-area: sideber;
+            
 
         }
         footer {
@@ -62,14 +72,35 @@ grid-row: 1;
 </head>
 <body>
     
+<article>
+    <h1>article one</h1>
+    <p>content...</p>
+</article>
+<h1>article tow</h1>
+
+    <p>content...</p>
+</article>
+<article>
+    <h1>article three</h1>
+    <p>content...</p>
+</article>
 </body>
 
 <div class="container">
 <head>header</head>
 <main>
 
-    <h1>Main</h1>
-    <p>Main content</p>
+
+
+
+
+
+
+
+
+
+
+
 </main>
 
 <aside>
