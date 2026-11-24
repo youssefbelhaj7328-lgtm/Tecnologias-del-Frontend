@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+<h1>Manejo del DOM (Document object medel) con leguaje javascrip</h1>
+
+<p id="p1" > Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, sed eaque. Suscipit ea ipsa accusamus obcaecati iure exercitationem similique enim atque dolorem beatae provident repellat, sint eligendi. Cupiditate, odio repudiandae!
+    
+</p>
+<button id="btn1">Canbiar Estilo del Parrafo</button>
+<script>
+        //Codigo del lenguaje javascript
+
+        /*El seguinte codigo es un metodo, es unb manejador de evento click.
+        que un evento es algo que ocurre en el navegador (minimizar una ventana ,maximizarla
+        hacer clkc en algun parte.....tec)y que le hes notificado a la aplicacion y si tiene un manejador de eventos respondera al mismo */
+
+        document.querySelector("btn1").addEventListener("click", ()=>  {
+alert("estoy respondiendo al evento click");
+//console.log("Se ha hecho click en el boton");
+
+        });
+    </script>
+
+</body>
+</html>
