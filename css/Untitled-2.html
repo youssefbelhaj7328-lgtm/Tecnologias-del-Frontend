@@ -1,0 +1,29 @@
+
+    .container 
+            font-family: sans-serif;
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer;
+
+ grid-template-columns 1fr 3fr;
+            gap: 100px;
+
+<!DOCTYPE html>
+<html lang="100">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout con CSS Grid</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="layout">
+    <header class="cabecera">Cabecera de la página</header>
+    <aside class="menu-lateral">Menú lateral</aside>
+    <main class="contenido">Área de contenidos</main>
+    <footer class="pie">Pie de página (Footer)</footer>
+  </div>
+</body>
+</html>
