@@ -1,0 +1,85 @@
+
+    
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro al HTML</title>
+    <style>
+        #contenido {
+            margin: 0 auto;
+            width: 80%;
+            background-color: aquamarine;
+            border: 2px solid red;
+            display: grid;
+            grid-template-columns: 3fr 7fr;
+            grid-template-areas:
+                "header header"
+                "sidebar content"
+                "footer footer";
+        }
+
+        #cabecera {
+            grid-area: header;
+            height: 50px;
+            background-color: brown;
+            color: white;
+            text-align: center;
+        }
+
+        #headerCabecera {
+            margin-top: 0px;
+        }
+
+        #menuLateral {
+            grid-area: sidebar;
+            background-color: coral;
+            color: white;
+            min-height: 500px;
+        }
+
+        #areaContenido {
+            grid-area: content;
+            min-height: 500px;
+            background-color: darkgreen;
+            color: white;
+        }
+
+        #footer {
+            grid-area: footer;
+            height: 50px;
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Uso de CSS Grid Layout</h1>
+    <div id="contenido">
+        <div id="cabecera">
+            <h1 id="headerCabecera">Cabecera de la pagina</h1>
+        </div>
+        <div id="menuLateral">
+            Menu lateral
+        </div>
+        <div id="areaContenido">
+            Area de Contenidos
+        </div>
+        <div id="footer">
+            Pie de Pagina (Footer)
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+
